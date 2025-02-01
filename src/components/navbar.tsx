@@ -1,41 +1,33 @@
 "use client";
 
-// import Image from "next/image";
-// import { useTranslations } from "next-intl";
-// import Link from "next/link";
 import {
   Disclosure,
   DisclosureButton,
   DisclosurePanel,
 } from "@headlessui/react";
 import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/20/solid";
-// import { Switch } from "@headlessui/react";
-// import { useState } from "react";
+import { useTranslations } from "next-intl";
+import LanguageSelect from "./language-select";
 
-export default function Navbar() {
-  // const t = useTranslations("navbar");
-  // const [enabled, setEnabled] = useState(false);
+const Navbar = () => {
+  const t = useTranslations("navbar");
 
-  // const navigation = [
-  //   { name: t("homePage"), href: "/" },
-  //   { name: t("favourites"), href: "/favourites" },
-  //   { name: t("explore"), href: "/explore" },
-  //   { name: t("contact"), href: "/contact" },
-  // ];
   const navigation = [
-    { name: "homePage", href: "/" },
-    { name: "favourites", href: "/favourites" },
-    { name: "explore", href: "/explore" },
-    { name: "contact", href: "/contact" },
+    { name: t("homePage"), href: "/" },
+    { name: t("favourites"), href: "/favourites" },
+    { name: t("explore"), href: "/explore" },
+    { name: t("contact"), href: "/contact" },
   ];
-
 
   return (
     <>
-      <Disclosure as="nav" className="sticky top-0 bg-white shadow-md flex justify-center items-center">
+      <Disclosure
+        as="nav"
+        className="sticky bg-red-400 top-0 shadow-md flex justify-center items-center py-7"
+      >
         {({ open }) => (
           <>
-            <div className="container bg-red-400">
+            <div className="container bg-red-700">
               <div className="">
                 <div className="">
                   <div className="hidden items-center sm:ml-6 xl:flex">
@@ -51,16 +43,7 @@ export default function Navbar() {
                       ))}
                     </div>
 
-                    {/* <Switch
-                      checked={enabled}
-                      onChange={setEnabled}
-                      className="group relative flex h-7 w-14 cursor-pointer rounded-full bg-white/10 p-1 transition-colors duration-200 ease-in-out focus:outline-none data-[focus]:outline-1 data-[focus]:outline-white data-[checked]:bg-white/10"
-                    >
-                      <span
-                        aria-hidden="true"
-                        className="pointer-events-none inline-block size-5 translate-x-0 rounded-full bg-white ring-0 shadow-lg transition duration-200 ease-in-out group-data-[checked]:translate-x-7"
-                      />
-                    </Switch> */}
+                    <LanguageSelect />
                   </div>
                 </div>
 
@@ -102,4 +85,6 @@ export default function Navbar() {
       </Disclosure>
     </>
   );
-}
+};
+
+export default Navbar;

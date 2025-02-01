@@ -14,14 +14,16 @@
         "homePage": "Home",
         "favourites": "Favourites",
         "explore": "Explore",
-        "contact": "Contact",
-        "languageSelect": {
-            "en": "English",
-            "pl": "Polish",
-            "flagEn": "English flag",
-            "flagPl": "Polish flag",
-            "switchToEnglish": "Switch to English",
-            "switchToPolish": "Switch to Polish"
-        }
+        "contact": "Contact"
+    },
+    "languageSelect": {
+        "english": "English",
+        "polish": "Polish",
+        "en":"en",
+        "pl":"pl",
+        "flagEn": "English flag",
+        "flagPl": "Polish flag",
+        "switchToEnglish": "Switch to English",
+        "switchToPolish": "Switch to Polish"
     }
 }

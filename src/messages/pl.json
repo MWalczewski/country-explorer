@@ -11,17 +11,19 @@
         "welcomeInPoland": "Witamy w Polsce!"
     },
     "navbar": {
-        "home-page": "Główna",
+        "homePage": "Główna",
         "favourites": "Ulubione",
         "explore": "Odkrywaj",
-        "contact": "Kontakt",
-        "languageSelect": {
-            "en": "Angielski",
-            "pl": "Polski",
-            "flagEn": "Angielska flaga",
-            "flagPl": "Polska flaga",
-            "switchToEnglish": "Zmień na angielski",
-            "switchToPolish": "Zmień na polski"
-        }
+        "contact": "Kontakt"
+    },
+    "languageSelect": {
+        "english": "Angielski",
+        "polish": "Polski",
+        "en":"en",
+        "pl":"pl",
+        "flagEn": "Angielska flaga",
+        "flagPl": "Polska flaga",
+        "switchToEnglish": "Zmień na angielski",
+        "switchToPolish": "Zmień na polski"
     }
 }
