@@ -1,0 +1,27 @@
+{
+    "HomePage": {
+        "title": "Hello world!",
+        "about": "Go to the about page",
+        "welcomeInPoland": "Welcome In Poland!",
+        "welcome": "Welcome to our website!"
+    },
+    "home-page": {
+        "welcome": "Welcome to our website!",
+        "hello": "Hello!",
+        "welcomeInPoland": "Welcome In Poland!"
+    },
+    "navbar": {
+        "homePage": "Home",
+        "favourites": "Favourites",
+        "explore": "Explore",
+        "contact": "Contact",
+        "languageSelect": {
+            "en": "English",
+            "pl": "Polish",
+            "flagEn": "English flag",
+            "flagPl": "Polish flag",
+            "switchToEnglish": "Switch to English",
+            "switchToPolish": "Switch to Polish"
+        }
+    }
+}

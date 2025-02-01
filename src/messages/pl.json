@@ -1,0 +1,27 @@
+{
+    "HomePage": {
+        "title": "Witaj świecie!",
+        "about": "Idź do strony o nas",
+        "welcomeInPoland": "Witamy w Polsce!",
+        "welcome": "Witamy na naszej stronie!"
+    },
+    "home-page": {
+        "welcome": "Witamy na naszej stronie!",
+        "hello": "Cześć!",
+        "welcomeInPoland": "Witamy w Polsce!"
+    },
+    "navbar": {
+        "home-page": "Główna",
+        "favourites": "Ulubione",
+        "explore": "Odkrywaj",
+        "contact": "Kontakt",
+        "languageSelect": {
+            "en": "Angielski",
+            "pl": "Polski",
+            "flagEn": "Angielska flaga",
+            "flagPl": "Polska flaga",
+            "switchToEnglish": "Zmień na angielski",
+            "switchToPolish": "Zmień na polski"
+        }
+    }
+}
