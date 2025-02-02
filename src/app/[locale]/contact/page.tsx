@@ -3,8 +3,8 @@
 import React from "react";
 import { useTranslations } from "next-intl";
 
-const FavouritesPage = () => {
-  const t = useTranslations("favourites");
+const ContactPage = () => {
+  const t = useTranslations("contact");
 
   return (
     <div>
@@ -14,4 +14,4 @@ const FavouritesPage = () => {
   );
 };
 
-export default FavouritesPage;
+export default ContactPage;

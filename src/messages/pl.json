@@ -1,11 +1,5 @@
 {
     "HomePage": {
-        "title": "Witaj świecie!",
-        "about": "Idź do strony o nas",
-        "welcomeInPoland": "Witamy w Polsce!",
-        "welcome": "Witamy na naszej stronie!"
-    },
-    "home-page": {
         "welcome": "Witamy na naszej stronie!",
         "hello": "Cześć!",
         "welcomeInPoland": "Witamy w Polsce!"
@@ -25,5 +19,17 @@
         "flagPl": "Polska flaga",
         "switchToEnglish": "Zmień na angielski",
         "switchToPolish": "Zmień na polski"
+    },
+    "favourites":{
+        "pageInProgress": "Strona ulubione w budowie",
+        "seeYouSoon": "Do zobaczenia wkrótce!"
+    },
+    "explore":{
+        "pageInProgress": "Strona Explore w budowie",
+        "seeYouSoon": "Do zobaczenia wkrótce!"
+    },
+    "contact":{
+        "pageInProgress": "Strona kontaktowa w budowie",
+        "seeYouSoon": "Do zobaczenia wkrótce!"
     }
 }

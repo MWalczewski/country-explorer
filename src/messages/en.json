@@ -1,11 +1,5 @@
 {
     "HomePage": {
-        "title": "Hello world!",
-        "about": "Go to the about page",
-        "welcomeInPoland": "Welcome In Poland!",
-        "welcome": "Welcome to our website!"
-    },
-    "home-page": {
         "welcome": "Welcome to our website!",
         "hello": "Hello!",
         "welcomeInPoland": "Welcome In Poland!"
@@ -25,5 +19,17 @@
         "flagPl": "Polish flag",
         "switchToEnglish": "Switch to English",
         "switchToPolish": "Switch to Polish"
+    },
+    "favourites":{
+        "pageInProgress": "Favourites page in progress",
+        "seeYouSoon": "See you soon!"
+    },
+    "explore":{
+        "pageInProgress": "Explore page in progress",
+        "seeYouSoon": "See you soon!"
+    },
+    "contact":{
+        "pageInProgress": "Contact page in progress",
+        "seeYouSoon": "See you soon!"
     }
 }

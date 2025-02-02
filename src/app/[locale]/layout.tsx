@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "./globals.scss";
 import Navbar from "@/components/navbar";
 // import { useMessages } from "use-intl";
 import { notFound } from "next/navigation";
