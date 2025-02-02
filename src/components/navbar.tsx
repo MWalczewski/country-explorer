@@ -8,6 +8,7 @@ import {
 import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/20/solid";
 import { useTranslations } from "next-intl";
 import LanguageSelect from "./language-select";
+import ThemeSwitch from "./theme-switch";
 
 const Navbar = () => {
   const t = useTranslations("navbar");
@@ -23,11 +24,11 @@ const Navbar = () => {
     <>
       <Disclosure
         as="nav"
-        className="sticky bg-red-400 top-0 shadow-md flex justify-center items-center py-7"
+        className="sticky bg-slate-400 dark:bg-red-700 top-0 shadow-md flex justify-center items-center py-7"
       >
         {({ open }) => (
           <>
-            <div className="container bg-red-700">
+            <div className="container bg-slate-600 dark:bg-red-950">
               <div className="">
                 <div className="">
                   <div className="hidden items-center sm:ml-6 xl:flex">
@@ -36,13 +37,13 @@ const Navbar = () => {
                         <a
                           key={item.name}
                           href={item.href}
-                          className="nav-btn px-2 py-2"
+                          className="nav-btn px-2 py-2 text-slate-800 dark:text-slate-300"
                         >
                           {item.name}
                         </a>
                       ))}
                     </div>
-
+                    <ThemeSwitch />
                     <LanguageSelect />
                   </div>
                 </div>

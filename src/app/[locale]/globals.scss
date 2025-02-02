@@ -2,18 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-$dark-blue: #000B58;
-$blue: #4C3BCF;
-$light-blue: #3DC2EC;
+// $dark-blue: #000B58;
+// $blue: #4C3BCF;
+// $light-blue: #3DC2EC;
 
-body {
-  color: #000B58;
-  background: $light-blue;
-}
+// body {
+//   color: #000B58;
+//   background: $light-blue;
+// }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    color: $light-blue;
-    background: $dark-blue;
-  }
-}
+// @media (prefers-color-scheme: dark) {
+//   body {
+//     color: $light-blue;
+//     background: $dark-blue;
+//   }
+// }

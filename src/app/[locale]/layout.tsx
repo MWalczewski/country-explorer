@@ -5,6 +5,7 @@ import Navbar from "@/components/navbar";
 import { notFound } from "next/navigation";
 import IntlProviderWrapper from "@/wrappers/IntlProviderWrapper";
 // import { useMessages } from "next-intl";
+import { ThemeProviderWrapper } from "./providers";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -34,13 +35,14 @@ const LocaleLayout: React.FC<Props> = async ({ children, params }) => {
   // const messages = useMessages();
   const messages = (await import(`../../messages/${locale}.json`)).default;
 
-
   return (
-    <html lang={locale}>
+    <html lang={locale} suppressHydrationWarning>
       <body>
         <IntlProviderWrapper locale={locale} messages={messages}>
-          <Navbar />
-          {children}
+          <ThemeProviderWrapper>
+            <Navbar />
+            {children}
+          </ThemeProviderWrapper>
         </IntlProviderWrapper>
       </body>
     </html>
