@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.scss";
 import Navbar from "@/components/navbar";
-// import { useMessages } from "use-intl";
 import { notFound } from "next/navigation";
-import IntlProviderWrapper from "@/wrappers/IntlProviderWrapper";
-// import { useMessages } from "next-intl";
-import { ThemeProviderWrapper } from "./providers";
+import { Providers } from "./providers";
+import { loadMessages, routing } from "@/utils/intlUtils";
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -22,28 +21,19 @@ type Props = {
 const LocaleLayout: React.FC<Props> = async ({ children, params }) => {
   const { locale } = await params;
 
-  const routing = {
-    locales: ["en", "pl"],
-    defaultLocale: "en",
-  };
-
-  // Ensure that the incoming `locale` is valid
   if (!routing.locales.includes(locale)) {
     notFound();
   }
 
-  // const messages = useMessages();
-  const messages = (await import(`../../messages/${locale}.json`)).default;
+  const messages = await loadMessages(locale);
 
   return (
     <html lang={locale} suppressHydrationWarning>
       <body>
-        <IntlProviderWrapper locale={locale} messages={messages}>
-          <ThemeProviderWrapper>
-            <Navbar />
-            {children}
-          </ThemeProviderWrapper>
-        </IntlProviderWrapper>
+        <Providers locale={locale} messages={messages}>
+          <Navbar />
+          {children}
+        </Providers>
       </body>
     </html>
   );
