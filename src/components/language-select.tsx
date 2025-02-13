@@ -29,21 +29,20 @@ const LanguageSelect = () => {
   }
 
   return (
-    <div className="">
       <Menu>
-        <MenuButton className="inline-flex items-center gap-2 rounded-md bg-gray-800 py-1.5 px-3 text-sm/6 font-semibold text-white shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-gray-700 data-[open]:bg-gray-700 data-[focus]:outline-1 data-[focus]:outline-white">
-          <LanguageIcon className="size-4" />
+        <MenuButton className="inline-flex items-center gap-2  text-slate-900 dark:text-blue-200">
+          <LanguageIcon className="h-4 w-4" />
         </MenuButton>
 
         <MenuItems
           transition
           anchor="bottom end"
-          className="origin-top-right rounded-xl border border-white/5 bg-white/5 p-1 text-sm/6 text-white transition duration-100 ease-out [--anchor-gap:var(--spacing-1)] focus:outline-none data-[closed]:scale-95 data-[closed]:opacity-0"
+          className="origin-top-right shadow-lg rounded-xl border border-gray-700 bg-gray-400/40 dark:bg-blue-950/40 p-1 text-sm/6 text-white transition duration-150 ease-out [--anchor-gap:5px] focus:outline-none data-[closed]:scale-95 data-[closed]:opacity-0"
         >
           {languageOptions.map((option) => (
             <MenuItem key={option.language}>
               <button
-                className="group flex w-full items-center gap-2 rounded-lg py-1.5 px-3 data-[focus]:bg-white/10"
+                className="group flex w-full items-center gap-2 rounded-lg py-1.5 px-3  text-slate-900 dark:text-blue-200 hover:text-white hover:dark:text-black hover:bg-white/30"
                 onClick={() => {
                   handleLocaleChange(option.language);
                 }}
@@ -61,7 +60,6 @@ const LanguageSelect = () => {
           ))}
         </MenuItems>
       </Menu>
-    </div>
   );
 };
 
