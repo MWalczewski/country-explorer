@@ -15,7 +15,7 @@ const IntlProviderWrapper: React.FC<Props> = ({
   messages,
 }) => {
   return (
-    <NextIntlClientProvider locale={locale} messages={messages}>
+    <NextIntlClientProvider locale={locale} messages={messages} timeZone="Europe/Warsaw">
       {children}
     </NextIntlClientProvider>
   );
